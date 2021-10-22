@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ClearScore Donut</string>
+    <string name="your_credit_score">Your credit score is</string>
+    <string name="out_of_a_max_score">out of %1$d</string>
+    <string name="start_button_text">Start</string>
+    <string name="score_ready">Ready</string>
+    <string name="score_unavailable">Unavailable</string>
+
+</resources>
