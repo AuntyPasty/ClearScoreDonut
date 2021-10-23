@@ -4,16 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/window_background"
     tools:context=".ui.main.MainActivity">
 
 
     <daveho.co.auntypasty.clearscoredonut.ui.main.DonutGraphView
         android:id="@+id/donutGraph"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="0dp"
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/donut_bottom_guide"
         />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -63,6 +65,14 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/donut_bottom_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.6"
+         />
 
     <Button
         android:id="@+id/start_button"

@@ -11,4 +11,7 @@
     <color name="border_circle">#111835</color>
     <color name="score_circle">#f2860d</color>
     <color name="score_unavailable">#a3220d</color>
+
+    <color name="blue_dark">#99DDFF</color>
+    <color name="blue_light">#CCDDFF</color>
 </resources>
