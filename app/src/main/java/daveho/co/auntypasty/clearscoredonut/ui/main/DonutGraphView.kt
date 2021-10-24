@@ -22,7 +22,7 @@ class DonutGraphView @JvmOverloads constructor(context: Context, attrs: Attribut
 
         // Define the border circle diameter in terms of the max allowed width or height given to it
         // Define the Score circle diameter in terms of how it relates to the diameter of the border circle.
-        const val BORDER_CIRCLE_DIAMETER_TO_MAX_DIMENSION_RATIO = 0.7f  // Must be less then 1
+        const val BORDER_CIRCLE_DIAMETER_TO_MAX_DIMENSION_RATIO = 0.8f  // Must be less then 1
         const val SCORE_CIRCLE_DIMENSION_TO_BORDER_CIRCLE_RATIO = 0.9f
 
         // 0 degrees is at the 3 O'clock position
