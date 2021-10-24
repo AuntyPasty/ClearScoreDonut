@@ -65,7 +65,14 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.google.android.material:material:1.4.0'
 
+    // testing
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.mockito.kotlin:mockito-kotlin:3.2.0'
     testImplementation 'org.hamcrest:hamcrest-core:2.2'
+    androidTestImplementation 'androidx.test:runner:1.4.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation 'androidx.test:core-ktx:1.4.1-alpha03'
+    androidTestImplementation 'androidx.test:core:1.4.1-alpha03'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4-alpha03'
+    androidTestImplementation 'androidx.test.ext:junit-ktx:1.1.4-alpha03'
 }
