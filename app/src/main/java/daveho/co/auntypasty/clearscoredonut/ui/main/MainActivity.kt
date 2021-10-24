@@ -7,7 +7,6 @@ import android.widget.Toast
 import daveho.co.auntypasty.clearscoredonut.R
 import daveho.co.auntypasty.clearscoredonut.di.component.DaggerActivityComponent
 import daveho.co.auntypasty.clearscoredonut.di.module.ActivityModule
-import daveho.co.auntypasty.clearscoredonut.entity.ScoreState
 import daveho.co.auntypasty.clearscoredonut.ui.ClearScoreDataModel
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
@@ -50,10 +49,9 @@ class MainActivity : AppCompatActivity(), MainContract.View {
         credit_score_value.text = resources.getString(R.string.score_unavailable)
         credit_score_value.setTextColor( getColor(R.color.score_unavailable))
         credit_score_suffix.visibility = View.GONE
-    }
 
-    override fun setState(state: ScoreState) {
-        // TODO Do something useful.
+        // Show a toast to the user to say something has gone wrong
+        Toast.makeText(this, R.string.error_message, Toast.LENGTH_LONG).show()
     }
 
     private fun injectDependency() {

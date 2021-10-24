@@ -3,11 +3,9 @@ package daveho.co.auntypasty.clearscoredonut.ui.main
 import daveho.co.auntypasty.clearscoredonut.entity.ClearScoreRangeData
 import daveho.co.auntypasty.clearscoredonut.ui.ClearScoreDataModel
 import daveho.co.auntypasty.clearscoredonut.usecase.ClearScoreDataFetcher
-
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
-import io.reactivex.subjects.PublishSubject
 
 class PojoScoreResultPresenter(
     private val dataFetcher: ClearScoreDataFetcher
